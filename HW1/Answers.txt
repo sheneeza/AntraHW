@@ -63,3 +63,18 @@ and return exits the loop and the entire method immediately.
 10. What interface must an object implement to be enumerated over by using the foreach
 statement?
 - An object must implement IEnumerable (or IEnumerable<T>) to be iterable in a foreach loop.
+
+
+Practice Loops and operators
+1. int max = 500;
+   for (byte i = 1; i < max; i++)
+   {
+       WriteLine(i);
+   }
+   
+What happens: cause a compilation error due to type mismatch between byte i and int max
+What code could you add (don’t change any of the preceding code) to warn us about the
+problem?
+- By wrapping the increment operation inside a checked block (try-catch), 
+an exception (OverflowException) will be thrown if byte i exceeds its maximum value of 255.
+

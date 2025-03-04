@@ -31,3 +31,35 @@ Unmanaged resource are resources that must be manually released through calling 
 garbage collector works as automatic memory manager but only works in heap memory.
 Cannot call garbage collector in c#, it will automatically work when an object has no reference to it.
 
+Controlling Flow and Converting Types
+
+Test your Knowledge
+1. What happens when you divide an int variable by 0?
+- There will be a math error, throwing a DivideByZeroException at runtime.
+2. What happens when you divide a double variable by 0?
+- If a positive/negative number is divided by 0 the result will be +/- infinity.
+- If 0 is divided by zero the result is NaN. 
+3. What happens when you overflow an int variable, that is, set it to a value beyond its
+range?
+- If it is not checked then the overflow wraps around but if it is checked then a System.OverFlowException is thrown.
+4. What is the difference between x = y++; and x = ++y;?
+- y++ is post-increment, returns the original value and then increments.
+- ++y is pre-increment, increments first and then returns the value.
+5. What is the difference between break, continue, and return when used inside a loop
+statement?
+- Using break exits the loop completely, continue skips the rest of the current iteration and moves to the next,
+and return exits the loop and the entire method immediately.
+6. What are the three parts of a for statement and which of them are required?
+- The three parts of the for statement are initialization, condition and update.
+- Initialization is not required and run once before the loop starts
+- Condition is required and will determine if the loop continues
+- Update is not required and runs after each iteration
+7. What is the difference between the = and == operators?
+- The = operator if for assigning values to variables, the == operator is used for comparison to check if two values are equal
+8. Does the following statement compile? for ( ; true; ) ;
+- Yes the statement compiles and results to an infinite loop because the condition always evaluates to true.
+9. What does the underscore _ represent in a switch expression?
+- The underscore acts as the default case in a switch expression.
+10. What interface must an object implement to be enumerated over by using the foreach
+statement?
+- An object must implement IEnumerable (or IEnumerable<T>) to be iterable in a foreach loop.

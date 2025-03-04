@@ -44,3 +44,6 @@ Console.Write("Enter number of centuries: ");
 int century = int.Parse(Console.ReadLine());
 ns.PrintCenturyConversion(century);
 
+//3. Practice loops and operators
+// Fizzbuzz:
+

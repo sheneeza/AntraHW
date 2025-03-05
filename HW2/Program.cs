@@ -166,3 +166,33 @@ int[] array3 = Console.ReadLine().Split().Select(int.Parse).ToArray();
 
 MostFrequentNumber mf = new MostFrequentNumber();
 mf.FindMostFrequentNumber(array3);
+
+// Practice String
+PracticeString ps = new PracticeString();
+//1.
+Console.WriteLine("--------------------------------------------------");
+
+Console.WriteLine("Reverse the string sample");
+Console.WriteLine($"The string in reverse is {ps.ReverseString("sample")}");
+Console.Write("The string in reverse is ");
+ps.ReverseString2("sample");
+Console.WriteLine();
+
+//2. Reverse a word
+Console.WriteLine("--------------------------------------------------");
+string sentence = "C# is not C++, and PHP is not Delphi!";
+Console.WriteLine($"Reverse the sentence: {sentence}");
+Console.WriteLine($"The sentence in reverse is {ps.ReverseWord(sentence)}");
+
+//3. 
+Console.WriteLine("--------------------------------------------------");
+string input = "Hi,exe? ABBA! Hog fully a string: ExE. Bob";
+List<string> palindromes = ps.Palindromes(input);
+
+Console.WriteLine("\nUnique palindromes (sorted):");
+Console.WriteLine(string.Join(", ", palindromes));
+
+//4. 
+Console.WriteLine("--------------------------------------------------");
+string url = "https://www.apple.com/iphone";
+ps.ParseUrl(url);

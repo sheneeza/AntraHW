@@ -1,0 +1,23 @@
+Test your Knowledge
+1. Describe the problem generics address.
+- generics allows us to write type-safe, re-usable code without specifying a concrete data type upfront
+- prevents runtime type errors by ensuring type consistency at compile time
+- eliminate unnecessary unboxing 
+2. How would you create a list of strings, using the generic List class?
+- List<string> list = new List<string>();
+3. How many generic type parameters does the Dictionary class have?
+- 2 TKey and TValue
+4. True/False. When a generic class has multiple type parameters, they must all match.
+- false
+5. What method is used to add items to a List object?
+- Add()
+6. Name two methods that cause items to be removed from a List.
+- Remove(), RemoveAt()
+7. How do you indicate that a class has a generic type parameter?
+- using angle brackets '<T>'
+8. True/False. Generic classes can only have one generic type parameter.
+- false
+9. True/False. Generic type constraints limit what can be used for the generic type.
+- true
+10. True/False. Constraints let you use the methods of the thing you are constraining to.
+- true
